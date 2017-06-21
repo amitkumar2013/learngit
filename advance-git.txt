@@ -64,5 +64,6 @@
 # Also always push to bare repos as it will not interfere with others work.
 
 # Merge is either Fast Forward or 3-way
-
-
+# Git Hooks are in .git/hooks folder any script would do. They can reside on servers as well. In case its on clients they are not cloned!.
+# Eg. Client side - pre-commit; prepare-commit-msg; commit-msg; post-commit; post-checkout; pre-rebase
+# Server side - pre-receive; update; post-receive
