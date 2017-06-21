@@ -8,6 +8,8 @@
 # git clone --template=<template-dir> <repo>
 
 # protocols are ssh git http https
+# http is unsecure
+# https or ssh://user@host/path/to/repo.git
 # config levels are --local --system --global
 
 # git stash -- to change context 
@@ -45,11 +47,21 @@
 # -- dont rebase public commits
 # git rebase -i would give you opportunity to 'squash' commits
 
-# get reflog -- tracks your movement in local repository
+# git reflog -- tracks your movement in local repository
 
+# git remote -v --to list add <remote-alias-name> <remote.repo.url> -- remote is a shortcut name to repositories
+# git remote rm <name> -- removes the connection between local and remote repo 
+# git remote rename <old> <new>
+# The default remote is called 'origin' - its created when we clone; if you pass -r to any git command it works on remote rather than local repo
 
+# git fetch + git merge = git pull
+# git pull --rebase <remote> --is like staying on top of everyother checkins
+# one can also set it up permanently like git config --global branch.autosetuprebase always
 
+# git push <to-remote-repo> <branch_to_be_pushed>
+# Remember tags need to be pushed separately
+# Also always push to bare repos as it will not interfere with others work.
 
-
+# Merge is either Fast Forward or 3-way
 
 
