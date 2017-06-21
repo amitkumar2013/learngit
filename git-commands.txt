@@ -33,3 +33,6 @@ git config --global push.default simple
 # Since we have not cloned we have to match our master to remote master
 git branch --set-upstream-to=origin/master master
 # now git push
+
+# Difference and not merge via git pull
+git diff master origin/master
