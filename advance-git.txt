@@ -46,6 +46,7 @@
 # git rebase <go-to-base> -- move a branch to another point branch|tag|commit-id -- a good way to integrate base changes into your local repository with clean history
 # -- dont rebase public commits
 # git rebase -i would give you opportunity to 'squash' commits
+# git rebase --continue or --abort after we either succeed in resolving conflicts or abandon it.
 
 # git reflog -- tracks your movement in local repository
 
