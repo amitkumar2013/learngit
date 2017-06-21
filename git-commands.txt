@@ -1,0 +1,27 @@
+# Initialize a local git repository
+> git init
+# ls -la would list a .git folder
+
+# Create a file 
+touch git-commands.txt
+# git status shows it as untracked
+
+# Stage it 
+git add git-commands.txt 
+# Commit it to local repository
+git commit -m "added first file"
+# I missed setting identiy as emai and name 
+git config --global user.email "amit@amit.com"
+git config --global user.name "amit kumar"
+# git status confirms it again
+
+# Lets share the same with others so create an account on github a free remote repository add set it up with our local one
+git remote add origin https://github.com/amitkumar2013/learngit.git
+# Now push the same
+git push origin master
+
+# One can pull from remote repository as well
+git pull  https://github.com/amitkumar2013/learngit master
+
+# I love vi editor more than nano so let me set it up
+git config --global core.editor "vim"
