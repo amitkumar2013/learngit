@@ -25,3 +25,11 @@ git pull  https://github.com/amitkumar2013/learngit master
 
 # I love vi editor more than nano so let me set it up
 git config --global core.editor "vim"
+
+# Useful stuff - userid, pswd, push default
+git config --global credential.helper "cache --timeout=3600"
+git config --global push.default simple
+
+# Since we have not cloned we have to match our master to remote master
+git branch --set-upstream-to=origin/master master
+# now git push
