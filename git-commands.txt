@@ -37,5 +37,11 @@ git branch --set-upstream-to=origin/master master
 # Difference and not merge via git pull
 git diff master origin/master
 
-# Create a branch
+# Create a branch to add a file and merge it to master and delete branch
 git branch my-branch
+git checkout my-branch # check via git branch
+touch test.txt
+git commit -a -m "added a file"
+git checkout master
+git merge my-branch
+git branch -d my-branch
