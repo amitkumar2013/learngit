@@ -1,0 +1,55 @@
+# git init --bare <path to repo.git> -- will create a non working directory repo as central repo just to pull or push.
+# git init <dir> --template=<template-dir> -- same as archetype
+
+# git clone <repo> <dir>
+# git clone -branch <tag> <repo>
+# git clone -depth=1 <repo>
+# git clone --bare or --mirror
+# git clone --template=<template-dir> <repo>
+
+# protocols are ssh git http https
+# config levels are --local --system --global
+
+# git stash -- to change context 
+# git stash pop [stash@{2}]-- to bring it back 2nd here (optional)-top if not mentioned  and remove it from the stash
+# git stash apply -- to bring it back but keep it in stash
+# git stash -u -- also stashes untracked files Or git stash -a -- also ignored files
+# git stash save "meaningful message" -- else git stash list will be confusing
+# git stash show [-p]
+# Or better move stash to a new branch -- git stash branch <branch> stash@{1}
+# git stash drop stash@{1}
+# git stash clear
+
+# .gitignore
+
+# git status is working dir git log is commited history
+# git log -n <limit>
+# git log --stat
+# filter patterns git log --grep="<pattern>"
+# git log <since>..<until> -- these are branch names, commit-id
+# git log <specific-file>
+# git log --graph --decorate --oneline
+
+# git checkout <branch> | <commit-id> | <file-name>
+# git checkout -b <branch-name> <from-branch>
+
+# git revert <commit-id> -- creates a new commit-id undoing all changes of the mentioned commit-id
+# git reset -- is considered unsafe as it can't be undone.
+# git reset [<file-name>] -- removes it from staging area but not from working directory
+# if one wants to clean working dir as well use git reset --hard [<commit-id>] if missing uses HEAD
+# Dont reset if pushed/shared only to local repo
+# git clean -- removes untracked files
+
+# git commit --amend (converge with last commit) -- dont amend public commits
+# git rebase <go-to-base> -- move a branch to another point branch|tag|commit-id -- a good way to integrate base changes into your local repository with clean history
+# -- dont rebase public commits
+# git rebase -i would give you opportunity to 'squash' commits
+
+# get reflog -- tracks your movement in local repository
+
+
+
+
+
+
+
