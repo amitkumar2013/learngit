@@ -36,3 +36,6 @@ git branch --set-upstream-to=origin/master master
 
 # Difference and not merge via git pull
 git diff master origin/master
+
+# Create a branch
+git branch my-branch
